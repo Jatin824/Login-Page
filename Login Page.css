@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.phone-mockup {
+  display: none;
+}
+
+.login-form {
+  max-width: 350px;
+  width: 100%;
+}
+
+.form-box {
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo {
+  width: 175px;
+  margin-bottom: 30px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 8px;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #dbdbdb;
+  background: #fafafa;
+  border-radius: 3px;
+}
+
+button {
+  background-color: #0095f6;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.divider {
+  text-align: center;
+  margin: 20px 0;
+  color: #8e8e8e;
+  font-size: 13px;
+  position: relative;
+}
+
+.divider::before, .divider::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 40%;
+  height: 1px;
+  background: #dbdbdb;
+}
+
+.divider::before {
+  left: 0;
+}
+
+.divider::after {
+  right: 0;
+}
+
+.facebook-login {
+  color: #385185;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 12px;
+  display: block;
+}
+
+.forgot {
+  text-align: center;
+  color: #00376b;
+  font-size: 12px;
+}
+
+.signup-box {
+  text-align: center;
+  background: #fff;
+  border: 1px solid #dbdbdb;
+  margin-top: 10px;
+  padding: 20px;
+}
+
+.signup-box a {
+  color: #0095f6;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.get-app {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.get-app p {
+  margin-bottom: 10px;
+}
+
+.app-buttons img {
+  height: 40px;
+  margin: 0 5px;
+}
+
+/* Responsive + phone mockup visible on larger screens */
+@media (min-width: 768px) {
+  .container {
+    justify-content: space-around;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .phone-mockup {
+    display: block;
+  }
+
+  .phone-mockup img {
+    height: 550px;
+  }
+}
